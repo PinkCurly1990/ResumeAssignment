@@ -135,6 +135,8 @@ footer {
     display: inline-block;
 }
 
+
+/* When I adjust the size on the screen I couldn't figure out how to hide grey background and contact list wouldn't stack */
 @media screen and (min-width: 750px) {
     
     header, footer {
@@ -151,3 +153,13 @@ footer {
     grid-template-columns: 1fr 2fr;
     column-gap: 10px;
 }
+
+.socialmedia {
+    
+    display: flex;
+    justify-content: center;
+
+    .socialmedia a {
+        padding: 5px;
+        
+    }
