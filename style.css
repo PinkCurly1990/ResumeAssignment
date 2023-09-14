@@ -1,0 +1,195 @@
+/* Followed Christina Truong Linkin and added personal touches */
+
+/* Adding border box to html */
+html {
+    box-sizing: border-box;
+}
+*. *::before, *::after {
+    box-sizing: inherit;
+}
+
+/* Style for the body of the page */
+body {
+    background-color: #616163;
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+/* Width style for picture */
+img {
+    width: 500px;
+}
+
+/* Style for heading one- font size and distance between lines and text shadow effect */
+h1 {
+    font-size: 90px;
+    line-height: 1;
+    text-shadow: 4px 4px #FFBFA0;
+}
+
+/* Style font size */
+h2 {
+
+    font-size: 45px;
+}
+
+/* Style for heading one and two */
+h1, h2 {
+    font-family: 'Gill San', cursive;
+    font-weight: 400;
+    margin: 0;
+}
+
+/* Style for font - make italic */
+h3 + p {
+ font-style: italic;
+
+}
+
+
+/* Style for space class wrap */
+.wrap {
+    width: 800px;
+    margin: 0 auto;
+    padding: 0;
+    padding: 60px 0;
+}
+
+/* Style for link font color */
+a {
+    color: #616163;
+}
+
+/*  No underline for link  */
+a:hover {
+    text-decoration: none;
+    
+}
+
+a:hover {
+    background-color: gold;
+}
+
+/* Background for header and center text */
+header {
+    background-color: #DAF5FF;
+    text-align: center;
+}
+
+/* Background for project */
+.projectname {
+    background-color: #87f6ff;
+}
+
+/* Style for link */
+.projectname a {
+    background-color: #FFBFA0;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+/* Style for image */
+.projectone img {
+    float: left;
+    margin-right: 30px;
+
+}
+
+/* Style space and add dott style */
+.projectone {
+    overflow: hidden;
+    border-bottom: 2px dotted;
+    color: #616163;
+    padding: 25px 0;
+}
+
+.rowproject {
+    float: left;
+}
+
+}
+/* style for header 3 and projectone  */
+.projectone h3 {
+    margin: 0;
+    color: black;
+}
+
+/* Background for work experience */
+.workexperience {
+    background-image: url(../Assignment3Start/placeholder\ images/sharon-mccutcheon-unsplash.jpg);
+   
+}
+
+/* Style for education */
+.education {
+    background-image: url(../Assignment3Start/placeholder\ images/joanna-kosinska-unsplash.jpg);
+    background-size: cover;
+    background-position: top right;
+}
+
+/* Style for text */
+.education p {
+    width: 60%;
+}
+
+/* Color for text */
+p {
+    color: black;
+}
+
+/* Style for text list */
+ul li {
+    color: black;
+}
+
+/*  Style for footer */
+footer {
+    background-color: #44FFD2;
+    color: black;
+    text-align: center;
+}
+/* Style for social media */
+.socialmedia {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+/* Style for  social media link */
+.socialmedia a {
+    padding: 15px;
+    display: inline-block;
+}
+
+
+/* When I adjust the size on the screen I couldn't figure out how to hide grey background and contact list wouldn't stack- Style for smaller devices */
+@media screen and (min-width: 750px) {
+    
+    header, footer {
+        text-align: center;
+    }
+
+    .projectone img {
+        float: left;
+        margin-right: 30px;
+}
+
+.jobdep {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 10px;
+}
+
+.socialmedia {
+    
+    display: flex;
+    justify-content: center;
+
+    .socialmedia a {
+        padding: 5px;
+        
+    }
